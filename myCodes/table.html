@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.table-d table {
+				background: #F00
+			}
+
+			.table-d table td {
+				background: #FFF;
+				text-align: center;
+			}
+			
+			.collapseTb>table
+			  {
+				border-collapse:collapse;
+				border: 1px solid;
+			  }
+			 .collapseTb tr td,th 
+			  {
+			    border:1px solid blue;
+			  }
+			
+		</style>
+	</head>
+	<body>
+		<div class="collapseTb">
+			<table id="tttt">
+				<tr>
+					<th>Firstname</th>
+					<th>Lastname</th>
+				</tr>
+				<tr>
+					<td>Bill</td>
+					<td>Gates</td>
+				</tr>
+				<tr>
+					<td>Steven</td>
+					<td>Jobs</td>
+				</tr>
+			</table>
+		</div>
+		<br>
+
+		<div class="table-d">
+			<table width="400" border="0" cellspacing="1" cellpadding="0">
+				<tr>
+					<td width="105">站名</td>
+					<td width="181">网址</td>
+					<td width="112">说明</td>
+				</tr>
+				<tr>
+					<td>DIVCSS5</td>
+					<td>www.divcss5.com</td>
+					<td>CSS学习</td>
+				</tr>
+				<tr>
+					<td>CSS5</td>
+					<td>www.css5.com.cn</td>
+					<td>CSS切图</td>
+				</tr>
+			</table>
+		</div>
+
+		<h4>横跨两列的单元格：</h4>
+		<table border="1">
+			<tr>
+				<th>姓名</th>
+				<th colspan="2">电话</th>
+				<th>年龄</th>
+			</tr>
+			<tr>
+				<td>Bill Gates</td>
+				<td colspan="2">555 77 854</td>
+				<td>22</td>
+			</tr>
+		</table>
+
+		<h4>横跨两行的单元格：</h4>
+		<table border="1">
+			<tr>
+				<th>姓名</th>
+				<td>Bill Gates</td>
+			</tr>
+			<tr>
+				<th rowspan="2">电话</th>
+				<td>555 77 854</td>
+			</tr>
+			<tr>
+				<td>555 77 855</td>
+			</tr>
+		</table>
+
+		<h4>cellspacing：</h4>
+		<table border="1" cellspacing="10">
+			<tr>
+				<td>1</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+		</table>
+
+
+	</body>
+</html>
