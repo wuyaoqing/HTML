@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+  <html>
+  	<head></head>
+  	<style type="text/css">
+  		html,
+  		body {
+  			height: 100%;
+  		}
+
+  		#content {
+			background-color: #FF0000;
+  		    height: auto !important; 
+  			/*for ie6 bug and ie7+,moz,webkit 正确*/
+  			height: 100%;
+			overflow: hidden;
+  			/*修复IE6,all browser*/
+  			 min-height: 100%; 
+  			/*for ie6 bug and ie7+,moz,webkit 正确*/
+  		}
+  	</style>
+  	<body>
+  		<div id="content">内容</div>
+  	</body>
+  </html>

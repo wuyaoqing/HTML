@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML5</title>
+	</head>
+	<body>
+		<input type="date" name="bday">
+		<p>P元素1</p>
+		<p>P元素2</p>		
+		
+		<h2>A h2 element</h2>
+		<h2>A h2 element</h2>
+		
+		<script type="text/javascript">
+			document.querySelector('p').style.backgroundColor='red';
+			
+			var allH2 = document.querySelectorAll('h2');
+			//allH2[1].style.backgroundColor='red';
+			//循环执行
+			// allH2.forEach(function(value){
+			// 	value.style.backgroundColor='red';
+			// })
+			var i;
+			for (i = 0; i < allH2.length; i++) {
+			    allH2[i].style.backgroundColor = "red";
+			}
+		</script>
+	</body>
+</html>

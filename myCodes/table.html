@@ -4,9 +4,10 @@
 		<meta charset="utf-8">
 		<title></title>
 		<style>
-			.table-d table {
+			./* table-d table {
 				background: #F00
 			}
+			#tttt tr:hover { background-color:#006030; color:#36c6ba;}
 
 			.table-d table td {
 				background: #FFF;
@@ -16,16 +17,41 @@
 			.collapseTb>table
 			  {
 				border-collapse:collapse;
-				border: 1px solid;
 			  }
 			 .collapseTb tr td,th 
 			  {
-			    border:1px solid blue;
-			  }
+			    border:1px solid #aaa;
+			  } */
+			  
+			 /* td{border:solid #add9c0; border-width:0px 1px 1px 0px; padding:10px 0px;} */
+			 .table1{border:solid #add9c0; border-width:1px 0px 0px 1px;}
 			
 		</style>
 	</head>
 	<body>
+		<div style="margin-bottom: 30px;">
+			<table class="table1"  >
+			   <tr>
+				 <td>C语言中文网</td>
+				 <td>http://c.biancheng.net/</td>
+				 <td>教育</td>
+			   </tr>
+				<tr>
+				 <td>百度</td>
+				 <td>http://www.baidu.com/</td>
+				 <td>搜索</td>
+				 </tr>
+			   <tr>
+				  <td>当当</td>
+				 <td>http://www.dangdang.com/</td>
+				  <td>图书</td>
+				</tr>
+			</table>
+		</div>
+		 
+		
+		 
+		
 		<div class="collapseTb">
 			<table id="tttt">
 				<tr>
@@ -43,7 +69,8 @@
 			</table>
 		</div>
 		<br>
-
+ 
+		
 		<div class="table-d">
 			<table width="400" border="0" cellspacing="1" cellpadding="0">
 				<tr>
@@ -79,7 +106,7 @@
 		</table>
 
 		<h4>横跨两行的单元格：</h4>
-		<table border="1">
+		<table border="">
 			<tr>
 				<th>姓名</th>
 				<td>Bill Gates</td>
@@ -94,7 +121,7 @@
 		</table>
 
 		<h4>cellspacing：</h4>
-		<table border="1" cellspacing="10">
+		<table border="" cellspacing="10">
 			<tr>
 				<td>1</td>
 				<td>2</td>
@@ -104,6 +131,8 @@
 				<td>4</td>
 			</tr>
 		</table>
+
+		
 
 
 	</body>

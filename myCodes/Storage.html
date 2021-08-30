@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>html5 web存储</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			if(typeof(Storage)!=="undefined")
+			{
+			    localStorage.setItem('key1','value1');
+				localStorage.setItem('key1','value3');
+				console.log(localStorage.getItem('key1'));
+				sessionStorage.setItem('key2','value2')
+				console.log(localStorage.length);
+			} else {
+			    console.log('抱歉! 不支持 web 存储。');
+			}
+		</script>
+	</body>
+</html>

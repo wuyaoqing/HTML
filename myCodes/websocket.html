@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			    var ip= '192.168.136.1';//localStorage.getItem("IP");//服务端的IP
+			    var openId= '123456';//localStorage.getItem("kmWechatOpenId");//value
+			    var url="ws://"+ip+":2019";    
+				var ws;
+			    if ("WebSocket" in window) {
+			        ws = new WebSocket(url);
+			    }
+			    else if ("MozWebSocket" in window) {
+			        ws = new MozWebSocket(url);
+			    }
+			    else{
+			      console.log("WebSocketConnent","浏览器版本过低，请升级您的浏览器")
+			    }
+			
+			    //注册各类回调
+			    ws.onopen = function () {
+			        ws.send(openId);//服务端WebSocketServer_NewMessageReceived 接收到消息
+			      console.log("WebSocketConnent","连接服务器成功");
+			    }
+			
+			    ws.onclose = function () {
+			      console.log("WebSocketConnent","与服务器断开连接");
+			    }
+			    ws.onerror = function () {
+			      console.log("WebSocketConnent","数据传输发生错误");
+			    }
+			    ws.onmessage = function (receiveMsg) {
+			      localStorage.removeItem("token");//服务端SendMsgToRemotePoint 发送消息后接收
+			
+			      console.log("WebSocketConnent","服务器推送过来的消息："+receiveMsg.data);
+			    }
+		</script>
+	</body>
+</html>
