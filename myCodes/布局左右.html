@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+    <style>
+		body{
+			margin:0;
+			padding:0;
+		}   
+        #wrap {
+            overflow: hidden; 
+			*zoom: 1;
+        }
+       
+        #sidebar {
+            float: left;
+			width: 300px;
+            background-color:pink;
+            position:fixed;
+            left:0;
+        }
+        #content {
+            margin-left: 310px;
+            height:1000px;
+			width: calc(100% - 310px);
+            background-color:#e456aa;
+        }
+        
+    </style>
+ 
+ </head>
+ <body>
+    <div id="wrap">
+        <div id="sidebar" style="height:600px;">固定宽度区</div>
+        <div id="content" style="height:1340px;">自适应区</div>
+    </div>
+ </body>    
+</html>
